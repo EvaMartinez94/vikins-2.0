@@ -7,47 +7,47 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SaxonTest {
-    int health = 60;
-    int strength = 25;
+     int health = 60;
+     int strength = 25;
 
-//    @Test
-//    public void should_inherit_from_Soldier() {
-//        Saxon saxon = new Saxon(health, strength);
-//        assertNotNull(saxon instanceof Soldier);
-//    }
+    @Test
+    public void should_inherit_from_Soldier() {
+        Saxon saxon = new Saxon(health, strength);
+        assertNotNull(saxon instanceof Soldier);
+    }
 
-//    @Test
-//    public void should_receive_2_arguments() {
-//        Saxon saxon = new Saxon(health, strength);
-//        assertNotNull(saxon);
-//    }
+    @Test
+    public void should_receive_2_arguments() {
+        Saxon saxon = new Saxon(health, strength);
+        assertNotNull(saxon);
+    }
 
-//    @Test
-//    public void should_receive_the_health_property_as_its_1st_argument() {
-//        Saxon saxon = new Saxon(health, strength);
-//        assertEquals(60, saxon.health);
-//    }
+    @Test
+    public void should_receive_the_health_property_as_its_1st_argument() {
+        Saxon saxon = new Saxon(health, strength);
+        assertEquals(60, saxon.health);
+    }
 
-//    @Test
-//    public void should_receive_the_health_property_as_its_2st_argument() {
-//        Saxon saxon = new Saxon(health, strength);
-//        assertEquals(25, saxon.strength);
-//    }
+    @Test
+    public void should_receive_the_health_property_as_its_2st_argument() {
+        Saxon saxon = new Saxon(health, strength);
+        assertEquals(25, saxon.strength);
+    }
 
-//    @Test
-//    public void attack_should_return_strength_property_of_the_Saxon() {
-//        Saxon saxon = new Saxon(health, strength);
-//        var resultAttack = saxon.attack();
-//        assertEquals(saxon.strength, resultAttack);
-//    }
+    @Test
+    public void attack_should_return_strength_property_of_the_Saxon() {
+        Saxon saxon = new Saxon(health, strength);
+        var resultAttack = saxon.attack(this.damage);
+        assertEquals(saxon.strength, resultAttack);
+    }
 
-//    @Test
-//    public void attack_should_receive_0_arguments() {
-//        Saxon saxon = new Saxon(health, strength);
-//        int damage = 50;
-//        int resultAttack = saxon.attack(damage);
-//        assertEquals(this.strength, resultAttack);
-//    }
+    @Test
+    public void attack_should_receive_0_arguments() {
+        Saxon saxon = new Saxon(health, strength);
+        int damage = 50;
+        int resultAttack = saxon.attack(damage);
+        assertEquals(this.strength, resultAttack);
+    }
 
 //    @Test
 //    public void damage_should_receive_1_arguments() {
